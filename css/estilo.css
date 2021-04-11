@@ -1,5 +1,5 @@
 .c{
-    background-color: wheat ;
+    background-color:whitesmoke;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 .carrusel{
@@ -8,4 +8,30 @@
     display:flexbox;
     margin-left: 13%;
     margin-right: 13%;
+}
+
+nav a{
+    text-align: center;
+}
+nav li{
+    border: none;
+    padding:0;
+    margin: 0%;
+    width: 200px;
+    height: auto;
+    border-radius: 22px 22px 22px 22px;
+    -moz-border-radius: 22px 22px 22px 22px;
+    -webkit-border-radius: 22px 22px 22px 22px;
+}
+nav li:hover{
+    border-radius: 22px 22px 22px 22px;
+    -moz-border-radius: 22px 22px 22px 22px;
+    -webkit-border-radius: 22px 22px 22px 22px;
+    font-weight: bolder;
+    background-color:rgb(134, 134, 202);
+    transition: 0.4s;
+}
+
+.h:hover{
+    background-color: rgb(134, 134, 202) ;
 }
