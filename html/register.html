@@ -58,7 +58,7 @@
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputEmail4">Correo electrónico</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                <input type="email" class="form-control" id="inputEmail4"  placeholder="Email" required>
               </div>
               <div class="form-group col-md-6">
                 <label for="inputPassword4">Contraseña</label>
@@ -107,11 +107,40 @@
             <div class="form-group">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  He leído los términos y condiciones y acepto vender mi alma.
+                <label class="form-check-label" for="gridCheck" >
+                  <a href="#" data-toggle="modal" data-target="#exampleModal"> He leído y acepto los términos y condiciones de servicio</a>
                 </label>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cemen</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        
+                        Principalmente, usted al aceptar este tratado de convergencia entre ambos mundos, TU mundo y MI mundo finalmente se unirán a traves del inevitable quiebre 
+                        del espacio-tiempo, lo que generará una colisión inminente entre lo real y lo irreal. Esto con el fin de dejar al universo y sus propias reglas en jaque,
+                        y así cambiar abruptamente su valor de 1, a nulo. Esto permitirá que el universo se rechace a si mismo, y desaparezca tal y como nació, de la nada.
+                        Hoy, he decidido crear estos términos y condiciones que todos deberían leer antes de aceptar, sin embargo yo
+                        creo que nadie se dará la lata de hacerlo, quizá por que nadie se de cuenta que existen, o quizá si, probablemente usted profesor,
+                        lo verá y dirá "oh wow que innecesario", y yo le diré "si, pero quedó de pana".
+
+                        
+                        Ah, si, y tu alma también es pal diaulo.
+                     
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+            <br>
             <button type="submit" class="btn btn-primary" style="display: block; margin:auto; background-color:rgb(134, 134, 202); border: none;">Registrarse</button>
           </form>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
