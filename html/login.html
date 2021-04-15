@@ -10,7 +10,7 @@
     <title>Cooperativa</title>
     
   </head>
-  <body class="c">
+  <body class="c" background="../img/bg.jpg" style="opacity: 95%;">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark " style="display: flex;">
         <a class="navbar-brand" href="#">
             <img src="../img/favicon.ico" width="40" height="auto" alt="">
@@ -30,9 +30,9 @@
                 Galería
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Artistas</a>
+                <a class="dropdown-item" href="artistas.html">Artistas</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Categorías</a>
+                <a class="dropdown-item" href="categorias.html">Categorías</a>
             </li>
 
             <li class="nav-item">
@@ -43,8 +43,14 @@
                 <a class="nav-link" href="Contacto.html">Contacto</a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="login.html">Iniciar sesión </a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Cuenta
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="login.html">Iniciar sesión</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="register.html">Registrarse</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0" >
@@ -53,15 +59,15 @@
           </form>
         </div>
       </nav>
-<br><br>
-      <form class="container col-md-4">
-        <img src="../img/account_circle_black_48dp.svg" alt="" height="200px" width="auto" style="display: block; margin:auto;">
+<br>
+      <form class="container col-md-5 bg-dark" style=" padding: 15px; border-radius: 5%; opacity: 90%;">
+        <img src="../img/account_circle_white_48dp.svg" alt="" height="200px" width="auto" style="display: block; margin:auto;">
         <div class="form-group ">
-          <label for="exampleInputEmail1">Correo electrónico</label>
+          <label for="exampleInputEmail1">Correo electrónico:</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su correo">
         </div>
         <div class="form-group">
-          <label for="exampleInputPassword1">Contraseña</label>
+          <label for="exampleInputPassword1">Contraseña:</label>
           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*********">
         </div>
         <div class="form-check">
@@ -69,9 +75,9 @@
           <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
         </div>
         <br>
-        <button type="submit" class="btn btn-primary" style="display: block; margin:auto; background-color:rgb(134, 134, 202); border: none;">Iniciar sesión </button>
+        <button  type="submit" class="btn btn-primary" style="display: block; margin:auto; background-color:rgb(134, 134, 202); border: none; ">Iniciar sesión </button>
+        <a href="register.html" style="color:cornsilk;" >¿No tienes una cuenta? Regístrate ahora!</a>
         <br>
-        <a href="register.html">¿No tienes una cuenta? Regístrate ahora!</a>
       </form>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

@@ -10,7 +10,7 @@
     <title>Cooperativa</title>
     
   </head>
-  <body class="c">
+  <body class="c"  background="../img/bg.jpg" style="opacity: 95%;">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark " style="display: flex;">
         <a class="navbar-brand" href="#">
             <img src="../img/favicon.ico" width="40" height="auto" alt="">
@@ -30,9 +30,9 @@
                 Galería
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Artistas</a>
+                <a class="dropdown-item" href="artistas.html">Artistas</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Categorías</a>
+                <a class="dropdown-item" href="categorias.html">Categorías</a>
             </li>
 
             <li class="nav-item">
@@ -43,8 +43,14 @@
                 <a class="nav-link" href="Contacto.html">Contacto</a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="login.html">Iniciar sesión </a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Cuenta
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="login.html">Iniciar sesión</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="register.html">Registrarse</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0" >
@@ -54,7 +60,7 @@
         </div>
       </nav>
 <br><br>
-      <form class="container col-md-4">
+      <form class="container col-md-5 bg-dark" style=" padding: 15px; border-radius: 5%; opacity: 90%;">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputEmail4">Correo electrónico</label>
@@ -62,24 +68,24 @@
               </div>
               <div class="form-group col-md-6">
                 <label for="inputPassword4">Contraseña</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="********">
+                <input type="password" class="form-control" id="inputPassword4" placeholder="********" required>
               </div>
             </div>
             <div class="form-group">
               <label for="inputAddress">Dirección</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="Cochayuyo nuevo 1909">
+              <input type="text" class="form-control" id="inputAddress" placeholder="Cochayuyo nuevo 1909" required>
             </div>
             <div class="form-row">
               <div class="form-group col-md-5">
                 <label for="inputState">País</label>
-                <select id="inputState" class="form-control">
+                <select id="inputState" class="form-control" required>
                   <option selected>Escoja un país</option>
                    <option>Obviamente Chile</option>
                 </select>
               </div>
               <div class="form-group col-md-4">
                 <label for="inputState">Región</label>
-                <select id="inputState" class="form-control">
+                <select id="inputState" class="form-control" required>
                   <option selected>Escoja una región</option>
                    <option >Región de Arica y Parinacota</option>
                    <option > Región de Tarapacá</option>
@@ -101,12 +107,12 @@
               </div>
               <div class="form-group col-md-3">
                 <label for="inputZip">Código postal</label>
-                <input type="text" class="form-control" id="inputZip">
+                <input type="text" class="form-control" id="inputZip" required>
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group" style="opacity: 100%;">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <input class="form-check-input" type="checkbox" id="gridCheck" required>
                 <label class="form-check-label" for="gridCheck" >
                   <a href="#" data-toggle="modal" data-target="#exampleModal"> He leído y acepto los términos y condiciones de servicio</a>
                 </label>
@@ -114,12 +120,12 @@
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Cemen</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <h5 class="modal-title" id="exampleModalLabel" style="color:black;">Términos y condiciones de servicios</h5>
+                        <button type="button" data-bs-dismiss="modal" aria-label="Close" data-keyboard="true">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
-                      <div class="modal-body">
+                      <div class="modal-body" style="color: black;">
                         
                         Principalmente, usted al aceptar este tratado de convergencia entre ambos mundos, TU mundo y MI mundo finalmente se unirán a traves del inevitable quiebre 
                         del espacio-tiempo, lo que generará una colisión inminente entre lo real y lo irreal. Esto con el fin de dejar al universo y sus propias reglas en jaque,
@@ -133,7 +139,7 @@
                      
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                       </div>
                     </div>
                   </div>
